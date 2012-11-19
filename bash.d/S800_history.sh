@@ -8,7 +8,7 @@ if [ "$PS1" ]; then
         # history configuration
 
         # ignore these commands when adding to history
-        HISTIGNORE='\&:fg:bg:ls:clear:mroe*:pwd:cd ..:cd ~-:cd -:cd:jobs:set -x:ls -l:ls -l'
+        HISTIGNORE='\&:fg:bg:ls:clear:exit:mroe*:pwd:cd ..:cd ~-:cd -:cd:jobs:set -x:ls -l:ls -l'
         HISTIGNORE=${HISTIGNORE}':%1:%2:popd:top:halt:shutdown:reboot*'
         export HISTIGNORE
 
