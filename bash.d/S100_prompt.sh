@@ -100,6 +100,10 @@ prompt ()
             PROMPT_COMMAND='history -a'
             PS1="\u${HCOLOR}@\h${NONE}: \w \$ "
         ;;
+        uhwg)
+            PROMPT_COMMAND='history -a'
+            PS1="\u${HCOLOR}@\h${NONE}: \w ${M}\$(parse_git_branch)${NONE}\$ "
+        ;;
         uw)
             PROMPT_COMMAND='history -a'
             PS1="(\u) \w \$ "
@@ -168,7 +172,7 @@ if [ "$PS1" ]; then
 
 
     #set the initial prompt
-    prompt uhg
+    prompt uhwg
 
 fi
 
