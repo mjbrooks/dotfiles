@@ -56,3 +56,7 @@ alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
 
 
+#todo.txt
+alias t='todo.sh -d ~/.todo/config'
+#enable completion for it
+complete -F _todo t
