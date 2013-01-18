@@ -19,7 +19,6 @@ if [ "$PS1" ]; then
 
         # ---- time ------------------------------------------------------------
         export TIME="\n%Uuser %Ssystem %Eelapsed %PCPU (%Xtext+%Ddata %Mmax)\n%Iinputs+%Ooutputs (%Fmajor+%Rminor)pagefaults %Wswaps"
-        alias t="/usr/bin/time"
 
         function wt() { while true ; do ( $@ ) ; sleep 1 ; clear ; done ; }
         function tt() { bash -c "time $*" ; }
